@@ -22,7 +22,7 @@ Star Lord's need to follow the trail with hints given below to recover
   ```
     vault kv list /secret
   ```
-  
+   *_Hint_*: vault kv secrets are stored in hierarchial paths, think unix files and directory  
 
   4) Once you encounter a kv secret key use following command to see the value 
 
