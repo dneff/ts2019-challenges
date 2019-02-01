@@ -1,9 +1,7 @@
-provision:
-	./tools/laptop_setup.sh
+doc-deploy:
+#	cd docs && hugo server --gc --disableFastRender > /dev/null 2>&1 &
+	sudo hugo -s docs -d /var/www/html -b "http://localhost"
 
-hugo-start:
-	cd docs && hugo server --gc --disableFastRender > /dev/null 2>&1 &
-	
 challenge-reset:
 	vagrant destroy
 	git reset --hard

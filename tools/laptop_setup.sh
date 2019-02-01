@@ -11,17 +11,16 @@ sudo dpkg -i vagrant_2.2.3_x86_64.deb
 echo "deb https://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee --append /etc/apt/sources.list
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo apt update
-sudo apt install -y virtualbox-6.0 hugo git
+sudo apt install -y virtualbox-6.0 hugo git nginx
 
-# assuming the laptop.box image is local. Swap to pull from remote (~4Gb)
+# assuming the laptop.box image is local to script. Swap to pull from remote (~4Gb)
 
 #vagrant box add --name laptop https://s3-us-west-2.amazonaws.com/ts2019-ops/laptop.box
-vagrant box add --name laptop ~/laptop.box
+vagrant box add --name laptop laptop.box
 
+# assuming script is not being run from inside repo.
 
-# assuming script is bring run from inside repo. If not, uncomment
-
-# cd ~ && git clone https://github.com/dneff/ts2019-challenges.git
+cd ~ && git clone https://github.com/dneff/ts2019-challenges.git
 
 echo 'Host devops
    User vagrant
