@@ -28,9 +28,9 @@ Login to the server
 Challenge 2 - Find HTTP request header value
 
 Someone wrote his first Hello World Python web client app and sending requests to the your webserver.
-Find HTTP request header and value this client is sending using tcpdump tool.
+Find HTTP request header and value of filed "Hello" this client is sending using tcpdump tool.
 
-Tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached. 
+Tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
 
 
 Hint: use `tcpdump -nn` with verbose to find header value
@@ -38,4 +38,4 @@ Hint: use `tcpdump -nn` with verbose to find header value
 Your code will be seen in the output of `tcpdump` command. Use only header field value (e.g key: value) without fileld name.
 
 
-<a href="https://ctf.ts2019.adobe.com/challenges#OpsToolKit2" target="_blank">Link to enter flag </a> 
+<a href="https://ctf.ts2019.adobe.com/challenges#OpsToolKit2" target="_blank">Link to enter flag </a>
