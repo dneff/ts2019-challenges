@@ -36,7 +36,7 @@ Host devops
 * `brew install hugo && cd <repo directory>/docs/  && hugo server --gc –disableFastRender && open http://localhost:1313`
 * Run vagrant box add --name laptop https://s3-us-west-2.amazonaws.com/ts2019-ops/laptop.box
 * `cd ts2019-challenges/`
-* `vagrant up` 
+* `vagrant plugin install vagrant-disksize && vagrant up` 
 * Modify ~/.ssh/config,  to be able to ssh with `ssh devops`
 
 ```
