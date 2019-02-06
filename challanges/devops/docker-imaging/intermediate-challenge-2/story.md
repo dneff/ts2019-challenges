@@ -6,7 +6,7 @@ It's a hello-world app. What kind of bloat do they think is there??
   `docker images -a | grep hello`
   This may be a bit different based on how you completed the last challenge's Dockerfile, but expect output something like this.
   `hello-worlds-python                        latest              927fb8d8ac54        24 minutes ago      931MB`
-  NINE HUNDRED AND THIRY ONE MEGABYTES. You can wash your eyes all you want, but this number is correct.
+  NINE HUNDRED AND THIRTY ONE MEGABYTES. You can wash your eyes all you want, but this number is correct.
 
 - Step 2: You do some math. < 1KB of code. ~10Mb of requirement library. Hmm. Definitely != 900+ MB. What about the base image? That's also a layer. Perhaps that's where the bloat is? Let's take a look.
   `docker images localhost:32000/python:3`
