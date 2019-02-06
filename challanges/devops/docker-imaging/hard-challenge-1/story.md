@@ -1,5 +1,5 @@
 Story:
-You packaged a python application in a docker image. After some rought internet episodes, it now looks glorius, and you feel confident in your Dockerfile writing skills. You decide to share your knowledge and help people on stackoverflow. Try your hand at this challenge:
+You packaged a python application in a docker image. After some rough internet episodes, it now looks glorius, and you feel confident in your Dockerfile writing skills. You decide to share your knowledge and help people on stackoverflow. Try your hand at this challenge:
 
 """
 Hello, I have a Dockerfile in which I do the following things:
@@ -18,7 +18,7 @@ I'm trying to gather the unique list of IPs from a very large apache log. While 
 Can someone help me optimize this?
 """
 
-TASK: Rewrite the above dockerfile so that it still contains the unique-access.log but is as small as possible. there are multiple ways to achive this and we only care about the final result. As long as your final image is as small as it can be.
+TASK: Rewrite the above dockerfile so that it still contains the unique-access.log but is as small as possible. There are multiple ways to achieve this and we only care about the final result. As long as your final image is as small as it can be.
 
 HINTS:
 - multistage build
