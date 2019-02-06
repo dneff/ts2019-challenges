@@ -4,6 +4,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "laptop"
+  config.disksize.size = '25GB'
   config.vm.define :laptop do |vm|
   end
   config.vm.box_check_update = false
