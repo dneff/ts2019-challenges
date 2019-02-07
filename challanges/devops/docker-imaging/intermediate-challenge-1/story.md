@@ -14,7 +14,7 @@ The rebuild goes as expected.
 - Step 2: The dev made a typo. The app says 'Hello Wrlds'. Grab an editor, fix this in the `hello-worlds.py` and rebuild the image.
   `docker build -t "hello-worlds-python" .`
 
-The app builds succesfully again..However, it gathered and installed all the dependencies again. This is frustrating, you don't want to have to do this everytime you fix typos! Maybe the guys on the internet had a point. Let's improve our image layers.
+The app builds succesfully again. However, it gathered and installed all the dependencies again. This is frustrating, you don't want to have to do this everytime you fix typos! Maybe the guys on the internet had a point. Let's improve our image layers.
 
 So you read up on docker image layers. Apparently, each instruction in the Dockerfile (FROM, ADD, COPY, RUN) adds a new 'layer'. As long as the instruction or the file in the instruction (in case of COPY/ADD) doesn't change, there is no need to create that layer again. But, if it DOES change, all the layers created after the instruction need to be rebuilt as well.
 

@@ -17,7 +17,7 @@ do the same with community-developed integrations between Nginx and Kubernetes.
 An Ingress rule is essentially like writing a reverse proxy rule in Nginx
 configuration. Kubernetes has standardized this syntax as "Ingress Rules".
 
-The developr team wants to deploy the image `localhost:3200/saykumar/ts2019:l2s1` under
+The developer team wants to deploy the image `localhost:3200/saykumar/ts2019:l2s1` under
 `/hello` and `localhost:32000/saykumar/ts2019:l2s2` under `/secondservice`. Can you help?
 
 
@@ -244,5 +244,5 @@ new frame and see your flag to advance!
 
 With these steps, you've now deployed 2 micro-services, served them on the same
 IP under 2 different HTTP paths. This has the beginnings of a web application,
-and you are growing fast as the DevOps support for the team! Congratualations!
+and you are growing fast as the DevOps support for the team! Congratulations!
 
